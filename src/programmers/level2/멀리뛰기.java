@@ -1,3 +1,4 @@
+package programmers.level2;
 public class 멀리뛰기 {
     public long solution(int n) {
         long[] dp = new long[n + 1];
@@ -12,7 +13,7 @@ public class 멀리뛰기 {
     }
 
     public static void main(String[] args) {
-        Solution s = new Solution();
+        멀리뛰기 s = new 멀리뛰기();
         System.out.println(s.solution(4)); // Should print 5
         System.out.println(s.solution(3)); // Should print 3
     }

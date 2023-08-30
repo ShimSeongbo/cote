@@ -1,6 +1,6 @@
 package programmers.level2;
 
-import java.util.HashSet;
+import java.util.Arrays;
 
 public class 구명보트 {
     public int solution(int[] people, int limit) {
@@ -24,7 +24,7 @@ public class 구명보트 {
     }
 
     public static void main(String[] args) {
-        Solution solution = new Solution();
+        구명보트 solution = new 구명보트();
         
         int[] people1 = {70, 50, 80, 50};
         int limit1 = 100;

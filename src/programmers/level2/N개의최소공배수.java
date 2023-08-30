@@ -24,7 +24,7 @@ public class N개의최소공배수 {
     }
 
     public static void main(String[] args) {
-        Solution s = new Solution();
+        N개의최소공배수 s = new N개의최소공배수();
         System.out.println(s.solution(new int[]{2, 6, 8, 14})); // Output should be 168
         System.out.println(s.solution(new int[]{1, 2, 3})); // Output should be 6
     }
