@@ -3,7 +3,7 @@ package programmers.level2;
 import java.util.Arrays;
 import java.util.Comparator;
 
-class Solution {
+class 튜플 {
     public int[] solution(String s) {
         return Arrays.stream(s.substring(2, s.length() - 2).split("\\},\\{"))
                 .sorted(Comparator.comparingInt(String::length))
