@@ -20,7 +20,9 @@ public class DoublePriorityQueue {
                 if(num == 1 && !maxHeap.isEmpty()) { // 최댓값 삭제
                     int max = maxHeap.poll();
                     minHeap.remove(max);
-                } else if(num == -1 && !minHeap.isEmpty()) { // 최솟값 삭제
+                } 
+                
+                if(num == -1 && !minHeap.isEmpty()) { // 최솟값 삭제
                     int min = minHeap.poll();
                     maxHeap.remove(min);
                 }
