@@ -2,7 +2,7 @@ package programmers.level3;
 
 import java.util.*;
 
-class Solution {
+class 불량사용자 {
     List<Set<String>> results = new ArrayList<>();
 
     public int solution(String[] user_id, String[] banned_id) {
