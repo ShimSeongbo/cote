@@ -3,6 +3,7 @@ package programmers.level3;
 public class 징검다리건너기 {
     public int solution(int[] stones, int k) {
         int left = 1, right = 200000000, mid;
+
         while (left <= right) {
             mid = (left + right) / 2;
             if (canCross(stones, k, mid)) {
@@ -11,6 +12,7 @@ public class 징검다리건너기 {
                 right = mid - 1;
             }
         }
+
         return right;
     }
 
@@ -24,6 +26,7 @@ public class 징검다리건너기 {
                 count = 0;
             }
         }
+
         return true;
     }
 
