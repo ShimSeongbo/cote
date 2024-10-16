@@ -64,6 +64,14 @@ public class 동영상재생기3 {
         }
     }
 
+
+
+
+
+
+
+
+
     class Solution2 {
         private static final int SKIP_TEN_SECONDS = 10;
 
@@ -79,16 +87,9 @@ public class 동영상재생기3 {
 
             for (String command : commands) {
                 switch (command) {
-                    case "prev" :
-                        currentPosition = Math.max(currentPosition - SKIP_TEN_SECONDS, 0);
-                        break;
-
-                    case "next" :
-                        currentPosition = Math.min(currentPosition + SKIP_TEN_SECONDS, videoDurationInSeconds);
-                        break;
-
-                    default:
-                        throw new IllegalArgumentException("Invalid command: " + command);
+                    case "prev" -> currentPosition = Math.max(currentPosition - SKIP_TEN_SECONDS, 0);
+                    case "next" -> currentPosition = Math.min(currentPosition + SKIP_TEN_SECONDS, videoDurationInSeconds);
+                    default -> throw new IllegalArgumentException("Invalid command: " + command);
                 }
 
                 if (isWithOpening(currentPosition, openingStartTime, openingEndTime)) {
