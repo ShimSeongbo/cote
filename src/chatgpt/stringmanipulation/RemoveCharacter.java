@@ -1,8 +1,5 @@
 package chatgpt.stringmanipulation;
 
-import java.util.Collections;
-import java.util.stream.Collectors;
-
 public class RemoveCharacter {
 
     public static void main(String[] args) {
